@@ -22,17 +22,12 @@
             <h3 class="mt-4">Response:</h3>
             <div class="alert alert-secondary">{{ result }}</div>
         {% endif %}
-        <!-- TEXT RESULT -->
-        {% if result %}
-            <h3 class="mt-4">Response:</h3>
-            <div class="alert alert-secondary">{{ result }}</div>
-        {% endif %}
 
         <!-- IMAGE RESULT -->
         {% if image_base64 %}
             <h3 class="mt-4">Generated Image:</h3>
             <img 
-                src="data:image/png;base64,{{ image_base64 }}" 
+                src="data:image/jpeg;base64,{{ image_base64 }}" 
                 class="img-fluid rounded shadow mt-3"
                 alt="Generated image"
             >
