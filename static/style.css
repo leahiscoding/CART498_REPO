@@ -1,0 +1,156 @@
+/* ==============================
+   Swiss Minimal × Futuristic
+   Sans-Serif System
+   ============================== */
+
+:root{
+  --bg:#f4f4f4;
+  --surface:#ffffff;
+  --text:#111318;
+  --muted:#6b7078;
+  --line:#d9dde3;
+  --accent:#111318;
+  --shadow:0 10px 28px rgba(0,0,0,0.05);
+}
+
+/* ---- Base ---- */
+html, body{
+  min-height:100%;
+}
+
+body{
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---- Layout ---- */
+.container{
+  max-width: 880px;
+}
+
+/* ---- Title ---- */
+h1.display-4{
+  font-weight: 700;
+  font-size: 2.4rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 2.5rem;
+  color: var(--text);
+}
+
+/* ---- Subtitles ---- */
+h3{
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 1.2rem;
+}
+
+/* ---- Form ---- */
+form{
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 0;
+  padding: 30px;
+  box-shadow: var(--shadow);
+}
+
+/* ---- Textarea ---- */
+textarea.form-control{
+  border-radius: 0;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--text);
+  padding: 16px;
+  min-height: 150px;
+  font-size: 0.95rem;
+  box-shadow: none;
+}
+
+textarea.form-control:focus{
+  border-color: var(--text);
+  box-shadow: none;
+}
+
+/* ---- Button ---- */
+.btn.btn-primary{
+  border-radius: 0;
+  border: 1px solid var(--text);
+  background: var(--text);
+  color: #fff;
+  padding: 14px 18px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  transition: all 180ms ease;
+}
+
+.btn.btn-primary:hover{
+  background: #fff;
+  color: var(--text);
+}
+
+/* ---- Interpretation Card ---- */
+.card{
+  border-radius: 0;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.card-body{
+  padding: 30px;
+}
+
+.card-text{
+  font-size: 0.95rem;
+  line-height: 1.75;
+  white-space: pre-wrap;
+  color: var(--text);
+}
+
+/* ---- Image ---- */
+img.img-fluid{
+  border-radius: 0 !important;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  transition: transform 250ms ease;
+}
+
+img.img-fluid:hover{
+  transform: scale(1.01);
+}
+
+/* ---- Alert ---- */
+.alert{
+  border-radius: 0;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--text);
+}
+
+/* ---- Spacing ---- */
+.mt-4{
+  margin-top: 2.5rem !important;
+}
+
+/* ---- Responsive ---- */
+@media (max-width:576px){
+  h1.display-4{
+    font-size:1.9rem;
+  }
+
+  form{
+    padding:20px;
+  }
+}
+
+.response-text{
+  white-space: pre-wrap;
+  line-height: 1.7;
+}
